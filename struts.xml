@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<!-- 设 置浏览器是否缓存静态内容，默认值为true（生产环境下使用），开发阶段最好 关闭 -->
+	<constant name="struts.serve.static.browserCache " value="false" />
+
+	<!-- 当 struts的配置文件修改后，系统是否自动重新加载该文件，默认值为false（生 产环境下使用），开发阶段最好打开 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+
+	<!-- 开 发模式下使用，这样可以打印出更详细的错误信息 -->
+	<constant name="struts.devMode" value="true" />
+
+	<!--该属性设置是否每次HTTP请求到达时,系统都重新加载资源文件(允许国际化文件重载).该属性默认值是false. 在开发阶段将该属性设置为true会更有利于开发,但在产品发布阶段应将该属性设置为false. -->
+	<constant name="struts.i18n.reload" value="true" />
+
+	<!-- 指定Web应用的默认编码集，相当于调用 HttpServletRequest的setCharacterEncoding方法 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+
+	<!-- 该 属性指定需要Struts 2处理的请求后缀，该属性的默认值是action，即 所有匹配*.do的请求都由Struts 2处理。如 
+		果用户需要指定多个请求后缀，则多个后缀之间以英文逗号（，）隔开 -->
+	<constant name="struts.action.extension" value="do" />
+
+	<!-- 默 认的视图主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+
+	<!-- 该 属性指定Struts 2中的action由Spring容器创 建 -->
+	<constant name="struts.objectFactory" value="spring" />
+
+</struts>    
